@@ -10,6 +10,8 @@ RUN xcaddy build "v${CADDY_VERSION}" \
 
 FROM caddy:${CADDY_VERSION}-alpine
 
+LABEL org.opencontainers.image.source="https://github.com/chess98/caddy-l4"
+
 ARG CADDY_VERSION
 ARG CADDY_L4_VERSION
 
